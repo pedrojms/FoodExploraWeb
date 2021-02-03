@@ -6,7 +6,9 @@ from api.views import *
 
 router= routers.DefaultRouter()
 router.register('photo',PhotoUploadView,'photo')
-router.register('cliente',ClienteViewset,'cliente')
+router.register('representante',RepresentanteViewset,'representante')
+router.register('representado',RepresentadoViewset,'representado')
+router.register('relacion',RelacionViewset,'relacion')
 
 
 urlpatterns = [

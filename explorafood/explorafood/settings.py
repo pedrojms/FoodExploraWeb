@@ -26,7 +26,7 @@ SECRET_KEY = '&q13i+jas=f)$%0o%j!x5%0hn!vf=*#=-a9ws5yp-ku$s)un=y'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -52,9 +52,9 @@ MIDDLEWARE = [
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
     'corsheaders.middleware.CorsMiddleware',
+
 ]
 CORS_ORIGIN_ALLOW_ALL = True
-
 
 ROOT_URLCONF = 'explorafood.urls'
 
@@ -117,6 +117,8 @@ AUTH_PASSWORD_VALIDATORS = [
 LANGUAGE_CODE = 'en-us'
 
 TIME_ZONE = 'UTC'
+
+TIME_ZONE = 'America/Guayaquil'
 
 USE_I18N = True
 
